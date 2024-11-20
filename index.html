@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage 2.0</title>
+</head>
+<body>
+    
+    <article>
+        <section>
+            <h1>My First Webpage (now with JavaScript)</h1>
+            <div>
+                <h2>My favorite books</h2>
+                <button onclick="showItems()">Show Favs</button>
+                <ul id="hidden-list" style="display: none;">
+                    <li>Lord of the Rings</li>
+                    <li>House of Leaves</li>
+                    <li>Perdido Street Station</li>
+                </ul>
+            </div>
+            <div>
+                <h2></h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <h2></h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+    </article>
+
+<style>
+
+</style>
+
+<script>
+    function showItems () {
+        document.getElementById("hidden-list").style.display = "initial";
+    }
+</script>
+
+</body>
+</html>
