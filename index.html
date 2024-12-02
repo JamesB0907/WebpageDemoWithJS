@@ -20,21 +20,10 @@
                 </ul>
             </div>
             <div>
-                <h2></h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <h2 id="para-heading"></h2>
+                <p id="para-body"></p>
             </div>
-            <div>
-                <h2></h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            <button onclick="showDateAndTime()">Show Date and Time</button>
         </section>
     </article>
 
@@ -44,7 +33,14 @@
 
 <script>
     function showItems () {
-        document.getElementById("hidden-list").style.display = "initial";
+        document.getElementById("hidden-list").style.display = "block";
+    }
+
+    document.getElementById("para-heading").innerHTML = "A Little About Me"
+    document.getElementById("para-body").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec pur us nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec pur us nec nunc tincidunt ultricies.";
+
+    function showDateAndTime () {
+        document.body.innerHTML += "<div> Today's date and time is " + new Date() + "</div>";
     }
 </script>
 
